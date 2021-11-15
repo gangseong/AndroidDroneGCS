@@ -2,8 +2,7 @@
 
 Android 드론 GCS 비연결 초기화면
 
-
-<img src="https://user-images.githubusercontent.com/60835787/141738592-1b81a38b-0f6d-4f4c-9ed8-5bdcfee83dd4.jpg" width="800" height="350"/>
+<img src="https://user-images.githubusercontent.com/60835787/141742444-091c1ba0-cd3e-44f1-8e2d-4c251be00841.jpg" width="800" height="350"/>
 
 # 어플리케이션 소개
 
