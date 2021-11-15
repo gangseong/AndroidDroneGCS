@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:foregroundTint="@null"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:navermap_latitude="35.947055"
+        app:navermap_longitude="126.681484"
+        app:navermap_mapType="Satellite" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:alpha="80"
+        android:background="#80000000"
+        android:backgroundTint="#000000"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/voltageLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전압"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/voltageValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0V"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/flightmodeLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비행모드"
+                android:textColor="#FFFFFF" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/flightmodeValueTextView"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:textColor="#FFFFFF" />-->
+
+
+            <Spinner
+                android:id="@+id/modeSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:alpha="80"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/altitudeLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고도"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/altitudeValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0m"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/speedLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="속도"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/speedValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0m/s"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yawLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YAW"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/yawValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0deg"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/satelliteLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위성"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/satelliteValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/or_border"
+        android:onClick="onArmButtonTap"
+        android:text="ARM"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/or_border"
+        android:onClick="onBtnConnectTap"
+        android:text="Connect"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map" />
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/or_border"
+        android:onClick="onbtnmapc"
+        android:text="일반지도"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnnmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/or_border"
+        android:onClick="onbtnnmapc"
+        android:text="일반지도"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnmap"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btngmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:onClick="onbtngmapc"
+        android:text="지형도"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnnmap"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnsmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:onClick="onbtnsmapc"
+        android:text="위성지도"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btngmap"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/mbtngmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:onClick="onmbtngmapc"
+        android:text="지형도"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/mbtnsmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:onClick="onmbtnsmapc"
+        android:text="위성지도"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/mbtnnmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/or_border"
+        android:onClick="onmbtnnmapc"
+        android:text="일반지도"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnlayeron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/or_border"
+        android:onClick="onbtnlayer"
+        android:text="지적도on"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnlayeroff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/border"
+        android:onClick="onbtnlayeroff"
+        android:text="지적도off"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnlayeron"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/border"
+        android:onClick="onbtnclear"
+        android:text="clear"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

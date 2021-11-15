@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyGCS</string>
+
+    <string-array name="drone_connection_types">
+        <item>UDP</item>
+    </string-array>
+</resources>
