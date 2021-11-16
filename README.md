@@ -59,6 +59,9 @@ Loiter 모드
 <img src="https://user-images.githubusercontent.com/60835787/141892422-bba3530a-90b2-40ad-865d-01b265a7a93a.jpg" width="800" height="350"/>   
 
 
+## 테스트 기기
+   
+<img src="https://user-images.githubusercontent.com/60835787/141899150-3bc0e491-465a-4459-b79d-954ae7859a52.jpg" width="512" height="512"/>
 
 
 Dronekit-Android-Via
