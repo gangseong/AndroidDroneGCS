@@ -65,7 +65,11 @@ Loiter 모드
 
 ## 테스트 영상
 ● 위치추적   
-https://user-images.githubusercontent.com/60835787/146128721-df9ae9e1-c518-483b-a800-ede8c2dc12c8.mp4   
+  
+
+https://user-images.githubusercontent.com/60835787/146128820-c3c7703c-68cf-4d5f-ba59-bd369a0df300.mp4
+
+
 
 ● 비행모드 변경   
 
