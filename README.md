@@ -64,11 +64,14 @@ Loiter 모드
 <img src="https://user-images.githubusercontent.com/60835787/141899150-3bc0e491-465a-4459-b79d-954ae7859a52.jpg" width="512" height="512"/>
 
 ## 테스트 영상
-● 비행모드 변경
+● 위치추적   
+https://user-images.githubusercontent.com/60835787/146128721-df9ae9e1-c518-483b-a800-ede8c2dc12c8.mp4   
 
-
+● 비행모드 변경   
 
 https://user-images.githubusercontent.com/60835787/146128537-2cebd89d-d06b-4329-9d8e-da10ce6a7518.mp4
+
+
 
 
 
